@@ -109,7 +109,7 @@ Theo khuyến nghị tại Deck §6.3, để khắc phục hiện tượng này 
 | 5 | `Shop ơi, mình đặt balo laptop mã đơn VN294388. Hoàn tiền. Ngay lập tức...` | `hoan_tien`, `cao`, `balo laptop`, `tich_cuc` | Sinh văn bản thừa markdown | `hoan_tien`, `cao`, `balo laptop`, `tich_cuc` | ✅ **FT thắng**: FT trả về JSON thuần khiết 100%, không bị lẫn text giải thích |
 
 **Mẫu chung ở các ca Fine-tune thua**:  
-Cả hai ca FT thua (ví dụ #3 và #5) đều xảy ra ở trường **`urgency`**, đặc biệt khi khách hàng nêu sự cố khiếu nại (hoàn tiền, thiếu phụ kiện) nhưng dùng câu kết lịch sự ("Khi nào tiện"). Mô hình fine-tune có xu hướng thiên kiến an toàn (safety bias) nên ưu tiên đánh giá mức khẩn cấp lên `trung_binh`, trong khi ground-truth ưu tiên từ khóa "Khi nào tiện" là `thap`.
+Cả hai ca FT thua (ví dụ #3 và #4) đều xảy ra ở trường **`urgency`**, đặc biệt khi khách hàng nêu sự cố khiếu nại (hoàn tiền, thiếu phụ kiện) nhưng dùng câu kết lịch sự ("Khi nào tiện"). Mô hình fine-tune có xu hướng thiên kiến an toàn (safety bias) nên ưu tiên đánh giá mức khẩn cấp lên `trung_binh`, trong khi ground-truth ưu tiên từ khóa "Khi nào tiện" là `thap`.
 
 ---
 
